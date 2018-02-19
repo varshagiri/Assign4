@@ -1,13 +1,13 @@
-###### We load in libraries
+We load in libraries
 `
 library(ggplot2) 
 library(plotly)
 `
-#### We Change Directory
+We Change Directory
 `
 setwd('~/mygraph2/bin/')
 `
-### We load in our dataframe
+We load in our dataframe
 `
 mygenes <- read.csv('gene_dist_head.tsv', header= TRUE, sep = "\t",fill = TRUE) 
 `
@@ -53,4 +53,4 @@ ggplot(data = genes) + geom_bar(mapping = aes(x = chr, fill = feature), width = 
  ggplotly(p) 
 `
 
-**Now we see tooltips**
+###### Now we see tooltips

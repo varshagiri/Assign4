@@ -53,4 +53,4 @@ ggplot(data = genes) + geom_bar(mapping = aes(x = chr, fill = feature), width = 
  ggplotly(p) 
 `
 
-###### Now we see tooltips
+###### Now we see tooltips.

@@ -1,5 +1,5 @@
-library("ggplot2") # We load in libraries
- library("plotly")
+library('ggplot2') # We load in libraries
+ library('plotly')
  setwd('~/mygraph2/bin/')  # We Change Directory
 # We load in our dataframe
  mygenes <- read.csv('gene_dist_head.tsv', header= TRUE, sep = "\t",fill = TRUE) 

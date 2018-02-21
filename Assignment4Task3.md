@@ -1,5 +1,6 @@
-library('ggplot2') # We load in libraries
- library('plotly')
+```
+library(ggplot2) # We load in libraries
+ library(plotly)
  setwd('~/mygraph2/bin/')  # We Change Directory
 # We load in our dataframe
  mygenes <- read.csv('gene_dist_head.tsv', header= TRUE, sep = "\t",fill = TRUE) 
@@ -14,12 +15,14 @@ library('ggplot2') # We load in libraries
  ggplot(data = genes) +  geom_bar(mapping = aes(x = chr, fill = feature), width = 1)
  ggplot(data = genes) +
  geom_bar(mapping = aes(x = feature))
-ggplot(data = genes) +
+ ggplot(data = genes) +
  geom_bar(mapping = aes(x = chr, fill = feature))
  ggplot(data = genes) +
  geom_bar(mapping = aes(x = chr, fill = feature), width = 1) +
  coord_polar()
  install.packages("devtools")
  devtools::install_github('hadley/ggplot2')
-p<-ggplot(data = genes) + geom_bar(mapping = aes(x = chr, fill = feature), width = 1)
-ggplotly(p)
+ p<-ggplot(data = genes) + 
+ geom_bar(mapping = aes(x = chr, fill = feature), width = 1) 
+ ggplotly(p)
+```
